@@ -1,0 +1,276 @@
+body {
+    font-family: 'Raleway', sans-serif;  
+}
+.container-fluid {
+    width: 100%;
+    max-width: 1400px;
+}
+.navbar {
+    height: 100px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color:  #FFC53D;
+}
+.navbar-brand {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.15em;
+}
+#navbarNav .nav-link {
+    color: #515151;
+    margin: 0px 20px;
+}
+.cover {
+    background: url("cover\ layer.png"), url("cover-photo.png");
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 600px;/*think what to do with height to get responsive...?*/
+}
+.box {
+    box-sizing: border-box;
+    text-align: center; 
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 0.02em;
+ }
+ .box1 {
+    color: #FFC53D;
+    font-size: 100px;
+    line-height: 117px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.box2 {
+    color: #FFFFFF;
+    font-size: 36px;
+    line-height: 42px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+ .happy-to-help {
+    color: #222222;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px; 
+    justify-content: center;
+    margin: 20px;
+}
+ .box-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+ .button {
+    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+    border-radius: 15px; 
+    border: 1px solid #FFC53D;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    padding: 13px;
+    margin: 10px 40px;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: bold;
+    color: white;
+}
+a {
+    color: white;
+}
+/*work on hover effect!*/
+button:hover, a:hover {
+    color: #FFC53D;
+    text-decoration: none;
+    background: #E1E1E1;
+}
+.box5 {
+    position: relative;
+    width: 70%;
+    height: 370px;
+    background: #FAFAFF;
+    margin-bottom: 40px;
+}
+.box6 {
+    position: relative;
+    width: 128%;
+    height: auto;
+    left: 10%;
+    top: 7%;
+    background: #FFFFFF;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+.without-border {
+    font-weight: normal;
+    line-height: 31px;
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    display: flex;
+    align-items: center;
+    margin: 25px;
+    padding: 17px;
+}
+.dotted {
+    justify-content: center;
+    text-align: left;
+    font-size: 18px;
+    line-height: 31px;
+    margin: 25px;
+    padding: 20px;
+    border-right: 3px dotted #FFC53D;
+}
+.dotted-right {
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    line-height: 31px;
+    margin: 25px 40px;
+    padding: 17px;
+    border-right: 3px dotted #FFC53D; 
+}
+.no-dotted {
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    line-height: 29px;
+    margin: 25px 0px;  
+    padding: 17px 0px; 
+}
+.dotted-left {
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    line-height: 29px;
+    margin: 25px 40px;
+    padding: 17px;
+    border-left: 3px dotted #FFC53D;
+}
+.orange-text {
+    color: #FFC53D;
+}
+.box7 {
+    position: relative;
+    width: 70%;
+    left: 30%;
+    height: 370px;
+    background: #FAFAFF;
+    margin-bottom: 40px;
+}
+.box8 {
+    position: relative;
+    width: 126%;
+    height: auto;
+    right: 32%;
+    top: 7%;
+    background: #FFFFFF;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+.box9 {
+    position: relative;
+    top: 3%;
+    left: 15%;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    font-family: Ubuntu;  
+}
+.box10 {
+    position: relative;
+    top: 3%;
+    left: 15%;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+}
+.portfolio {
+    color: #222222;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 38px; 
+    justify-content: center;
+    margin: 20px; 
+}
+.portfolio-container {
+    height: 346px;
+}
+.portfolio1 {
+    background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%), url("work-abroad.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.portfolio2 {
+    background: url("plants.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portfolio3 {
+    background: url("salad.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portfolio4 {
+    background: url("chair.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portfolio5 {
+    background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%), url("room.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact-container {
+    background: #FAFAFF;
+    height: 600px;
+}
+.form-container {
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    height: 500px;
+    width: 1200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+input {
+    background: #FAFAFF;
+    border-radius: 15px; 
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: #A0A0A0;
+    height: 30px;
+    width: 90%;
+    padding: 20px;
+    margin: 20px;
+    border-color: #FAFAFF;; 
+}
+.button-form {
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+    padding: 13px;
+}
+footer {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.02em; 
+    color: #A0A0A0; 
+    margin: 30px; 
+}
