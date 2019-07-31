@@ -26,15 +26,10 @@
   }
 
   .bg-header {
-      background: url("img/cover.jpg") no-repeat fixed;
+      background: url("img/computer-min.jpg") no-repeat fixed;
       background-size: cover;
-      min-height: 630px;
+      min-height: 800px;
       position: relative;
-  }
-
-  .header-bg-gray {
-      background: url();
-      min-height: 650px;
   }
 
   .container-fluid {
@@ -56,22 +51,22 @@
 .navbar .navbar-nav .active {
     font-size: 22px;
 }
-.navbar-brand, .navbar-nav>li>a {
+.navbar-brand, .navbar-nav li a {
     color: var(--darkgrey-text-color);
     margin: 0px 20px;
     outline: none;
 }
-.navbar-brand:hover, .navbar-nav>li>a:hover {
+.navbar-brand:hover, .navbar-nav li a:hover {
     color: var(--orange-text-color);
 }
 .active {
     opacity: 1;
 }
 .navbar-nav .nav-item .nav-link {
-    transition: 0.3s ease;
+    transition: 1s ease;
 }
 .navbar-nav .nav-item .nav-link:hover {
-    transition: 0.3s ease;
+    transition: 1s ease;
     font-size: 1.3rem;
 }
 .navbar .navbar-toggler:hover, .navbar .navbar-toggler:active {
@@ -104,6 +99,20 @@ button:focus {
 }
 .social-media-icons i{
     margin: 10px;
+}
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 5px;
+    background: var(--main-background-color);
+    margin: 10px;
+}
+a .fab {
+    color: var(--orange-text-color);
+    font-size: 1.3em;
 }
 .scroll-to-about a i {
     text-align: center;
@@ -153,11 +162,11 @@ button a {
     position: relative;
     width: 100%;
     min-height: 260px;
-    background: #FFC53D;
+    background: var(--grey-background-color);
     margin: 30px;
     margin-left: -10%;
 }
-.overlay h3 {
+.overlay h3, .contact-container h3 {
     font-weight: bold;
     font-size: 32px;
     line-height: 38px;
@@ -173,8 +182,6 @@ button a {
     bottom: -20%;
     height: 80%;
     width: 100%;
-    z-index: 100;
-    background-color: white;
     padding: 30px;
     margin: -2%;
 }
@@ -188,11 +195,17 @@ button a {
     color: var(--orange-text-color);
 }
 .svg {
-    padding: 15px;
+    margin: 0px 0px 10px;
 }
 
 /*--- portfolio ---*/
 
+h2 {
+    font-size: 1.7em;
+    margin: 30px;
+    line-height: 1.2;
+    font-weight: bold;
+}
 .fit-image {
     height: 100%;
     width: 100%;
@@ -201,11 +214,68 @@ button a {
     position: absolute;
     top: 10px;
     left: 10px;
+    text-align: left;
+    color: var(--white-text-color)
+}
+.top-left .button {
+    margin: 0px;
+}
+h4 {
+    font-weight: bold;
+    font-size: 2em;
+}
+.top-left p {
+    font-size: 0.7em;
 }
 /*--- contact ---*/
 
 .row .col-sm-5 {
     background: var(--orange-background-color);
+    color: var(--white-text-color);
+}
+.float-left {
+    float: left;
+    text-align: left;
+}
+.contact-container {
+    background: var(--grey-background-color);
+    padding: 0px 20px 40px;
+    margin-top: 30px;
+}
+.form-container {
+    position: relative;
+    background: var(--main-background-color);
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    margin: 0px 20px;
+}
+.contact-container h3 {
+    text-align: start;
+}
+.form-group input, .form-group textarea {
+    border-radius: 15px;
+    background: var(--grey-background-color);
+    font-family: Ubuntu;
+    color: var(--grey-text-color);
+    font-size: 0.8em;
+    border-color: var(--white-text-color);
+}
+.form-container h2 {
+    text-align: left;
+    font-weight: bold;
+    font-size: 2em;
+}
+.quadrato {
+    height: 40px;
+    width: 40px;
+    background: var(--orange-background-color);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 30px;
+    right: -20px;
+}
+.button_text_white {
+    color: var(--white-text-color);
+    float: right;
 }
 
 
