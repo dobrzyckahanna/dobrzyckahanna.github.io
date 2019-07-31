@@ -39,7 +39,7 @@
 
 .bg-header {
     background: url("img/computer-min.jpg") no-repeat fixed;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     min-height: 600px;
     max-width: 1600px;
