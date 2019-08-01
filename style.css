@@ -9,11 +9,11 @@
     --grey-background-color: #FAFAFF
   }
   
- html {
-     scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
  }
 
-  body {
+body {
     font-family: 'Raleway', sans-serif;
     color: var(--main-text-color);
     font-style: normal;
@@ -26,21 +26,22 @@
     position: relative;
   }
 
-  a {
-      text-decoration: none;
+a {
+    text-decoration: none;
   }
 
-  .container-fluid {
-      padding: 0;
+.container-fluid {
+    padding: 0;
   }
 
 /*--- navigation ---*/
-
 
 .bg-header {
     background: url("img/computer-min.jpg") no-repeat fixed;
     background-size: cover;
     background-position: center;
+    min-height: 600px;
+    max-width: 1600px;
 }
 .navbar {
     background: var(--main-background-color);
@@ -62,22 +63,24 @@
 }
 .navbar-brand:hover, .navbar-nav li a:hover {
     color: var(--orange-text-color);
-}
-.active {
-    opacity: 1;
+    transition: 0.4s ease-in-out;
 }
 .navbar-nav .nav-item .nav-link {
-    transition: 0.3s ease;
+    transition: 0.4s ease-in-out;
 }
 .navbar-nav .nav-item .nav-link:hover {
-    transition: 0.3s ease;
+    transition: 0.4s ease-in-out;
     font-size: 1.3em;
 }
 .navbar .navbar-toggler:hover, .navbar .navbar-toggler:active {
-    transition: 0.3s ease;
+    transition: 0.4s ease-in-out;
 }
 button:focus {
     outline: none;
+}
+button:hover {
+    transform: scale(1.05);
+    transition: 0.4s ease-in-out; 
 }
 .banner-text {
     padding: 10px;
@@ -111,6 +114,10 @@ button:focus {
     padding: 5px;
     background: var(--main-background-color);
     margin: 10px;
+}
+.circle:hover {
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out; 
 }
 a .fab {
     color: var(--orange-text-color);
@@ -147,42 +154,40 @@ button {
 button a {
     color: var(--white-text-color);
     text-decoration: none;
-  }
-  button a:hover {
+}
+button a:hover {
     color: var(--white-text-color);
     text-decoration: none;
-  }
+}
 
 /*--- about/skills ---*/
 
 .section-padding {
     padding: 0px;
 }
-.overlay {
-    position: relative;
-    width: 100%;
-    min-height: 260px;
-    background: var(--grey-background-color);
-    margin: 20px;
-    margin-left: 0;
+.profile {
+    background: url("img/foto.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 120px;  
+    width: 120px; 
+    border-radius: 50%;
 }
-.overlay h3, .contact-container h3 {
+.overlay {
+    background: var(--grey-background-color);
+}
+h3 {
     font-weight: bold;
     font-size: 1.9;
     padding: 10px;
     font-family: Ubuntu;
+    text-align: start;
 }
 .shadowed {
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
     background: var(--main-background-color);
-    position: absolute; 
-    top: 20%;
-    left: 20%;
-    bottom: -20%;
-    height: 80%;
-    width: 90%;
-    padding: 30px;
-    margin: -2%;
+    padding: 20px;
+    margin-right: -50px;
 }
 .text-left {
     text-align: left;
@@ -199,14 +204,44 @@ button a {
 
 /*--- portfolio ---*/
 
+.photo1 {
+    background: url('img/working-min.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+.photo2 {
+    background: url("img/programming-girl-min.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+.photo3 {
+    background: url("img/workplace-min.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+.photo4 {
+    background: url("img/coding-min.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+.photo5 {
+    background: url("img/workingBW-min.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+.photo:hover {
+    transform: scale(1.05);
+    transition: 0.4s ease-in-out; 
+}
 h2 {
     font-size: 1.7em;
     margin: 30px;
     font-weight: bold;
-}
-.fit-image {
-    height: 100%;
-    width: 100%;
 }
 .top-left {
     position: absolute;
@@ -253,7 +288,7 @@ h4 {
     float: left;
     text-align: left;
 }
-.contact-container {
+.about-container, .skills-container, .contact-container {
     background: var(--grey-background-color);
     padding: 0px 20px 40px;
     margin-top: 30px;
@@ -263,9 +298,6 @@ h4 {
     background: var(--main-background-color);
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
     margin: 0px 20px;
-}
-.contact-container h3 {
-    text-align: start;
 }
 .form-group input, .form-group textarea {
     border-radius: 15px;
@@ -310,85 +342,6 @@ h4 {
 @media only screen and (max-width: 480px) {
     body {
         font-size: 14px; 
-        line-height: 1.3;
-    }
-    .navbar {
-        padding: 5px;
-    }
-    .banner-text h2 {
-        font-size: 2em;
-    }
-    .banner-text p {
-        font-size: 1.5em;
-        margin-top: -30px;
-        padding: 0px 0px 20px;
-        font-weight: normal;
-    }
-    a .fab {
-        font-size: 1.5em;
-    }
-    .help {
-        font-size: 1.5em;
-        margin: 10px;
-    }
-    .button {
-        margin: 15px;
-        padding: 10px 20px;
-    }
-    .overlay h3, .contact-container h3 {
-       font-size: 1.5em; 
-    }
-    .shadowed .col-sm-2, .shadowed .col-sm-6 {
-        display: none;
-    }
-    .dotted-border-right {
-        border-right: 0;
-    }
-    #skills {
-        text-align: left;
-    }
-    #skills .col-sm-4 {
-        padding: 2px;
-        margin: 2px;
-    }
-    .svg {
-        display: none;
-        margin: 0;
-    }
-    h2 {
-      font-size: 1.5em;
-      margin: 10px;  
-    }
-    h4 {
-        font-size: 1.5em;
-    }
-    .row .col-sm-5 {
-        padding: 10px;
-    }
-    .fas .fa-envelope {
-        padding: 10px;
-        font-size: 1.5em;
-    }
-    .top {
-        line-height: 1.4;
-        text-align: center;
-        font-size: 0.9em;
-    }
-    .bottom {
-        padding-top: 50px;
-        text-align: center;
-    }
-    .form-container h2 {
-        font-size: 1.4em;
-        font-weight: normal;
-    }
-    .button-text-white {
-        margin: 10px;
-        padding: 10px 20px;
-    }
-    footer {
-        height: 20px;
-        padding-bottom: 30px;
     }
 }
 
@@ -396,93 +349,16 @@ h4 {
     body {
         font-size: 16px; 
     }
-    .navbar {
-        padding: 5px;
-    }
-    .banner-text h2 {
-        font-size: 3em;
-    }
-    .banner-text p {
-        font-size: 1.5em;
-        margin-top: -30px;
-        padding: 10px 0px 20px;
-        font-weight: normal;
-    }
-    a .fab {
-        font-size: 1.4em;
-    }
-    .help {
-        font-size: 1.5em;
-        margin: 10px;
-    }
-    .button {
-        margin: 15px;
-        padding: 10px 20px;
-    }
-    .overlay h3, .contact-container h3 {
-       font-size: 1.5em; 
-    }
-    .shadowed .col-sm-2, .shadowed .col-sm-6 {
-        display: none;
-    }
-    .dotted-border-right {
-        border-right: 0;
-    }
-    #skills {
-        text-align: left;
-    }
-    #skills .col-sm-4 {
-        padding: 1px;
-        margin: 1px;
-        font-size: 0.9em;
-    }
-    .svg {
-        display: none;
-        margin: 0;
-    }
-    h2 {
-      font-size: 1.5em;
-      margin: 10px;  
-    }
-    h4 {
-        font-size: 1.5em;
-    }
-    .row .col-sm-5 {
-        padding: 10px;
-    }
-    .fas .fa-envelope {
-        padding: 10px;
-        font-size: 1.5em;
-    }
-    .top {
-        line-height: 1.4;
-        text-align: center;
-        font-size: 0.9em;
-    }
-    .bottom {
-        padding-top: 50px;
-        text-align: center;
-    }
-    .form-container h2 {
-        font-size: 1.4em;
-        font-weight: normal;
-    }
-    .button-text-white {
-        margin: 10px;
-        padding: 10px 20px;
-    }
-    footer {
-        height: 20px;
-        padding-bottom: 30px;
-    }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1600px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     body {
         font-size: 16px;
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    
+@media only screen and (min-width: 1024px) and (max-width: 1600px) {
+   body {
+       font-size: 16px;
+   }
 }
