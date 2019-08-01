@@ -37,11 +37,11 @@
 /*--- navigation ---*/
 
 
-/*---.bg-header {
+.bg-header {
     background: url("img/computer-min.jpg") no-repeat fixed;
     background-size: cover;
     background-position: center;
-}---*/
+}
 .navbar {
     background: var(--main-background-color);
     font-weight: bold;
@@ -392,7 +392,7 @@ h4 {
     }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 768px) and (orientation: portrait) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
     body {
         font-size: 16px; 
     }
@@ -478,7 +478,9 @@ h4 {
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1600px) {
-
+    body {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
