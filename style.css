@@ -23,7 +23,6 @@ body {
     letter-spacing: 0.02em;
     justify-content: center;
     text-align: center;
-    position: relative;
   }
 
 a {
@@ -33,11 +32,14 @@ a {
 .container-fluid {
     padding: 0;
   }
+.container {
+    padding: 0;
+}
 
 /*--- navigation ---*/
 
 .bg-header {
-    background: url("img/computer-min.jpg") no-repeat fixed;
+    background: url("img/computer.jpg") no-repeat fixed;
     background-size: cover;
     background-position: center;
     min-height: 600px;
@@ -205,38 +207,34 @@ h3 {
 /*--- portfolio ---*/
 
 .photo1 {
-    background: url('img/working-min.jpg') no-repeat;
+    background: url('img/working.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     height: 400px;
 }
 .photo2 {
-    background: url("img/programming-girl-min.jpg") no-repeat;
+    background: url("img/programming-girl.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     height: 400px;
 }
 .photo3 {
-    background: url("img/workplace-min.jpg") no-repeat;
+    background: url("img/workplace.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     height: 400px;
 }
 .photo4 {
-    background: url("img/coding-min.jpg") no-repeat;
+    background: url("img/monitors.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     height: 400px;
 }
 .photo5 {
-    background: url("img/workingBW-min.jpg") no-repeat;
+    background: url("img/workingBW.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     height: 400px;
-}
-.photo:hover {
-    transform: scale(1.05);
-    transition: 0.4s ease-in-out; 
 }
 h2 {
     font-size: 1.7em;
@@ -328,13 +326,14 @@ h4 {
 
 /*--- footer ---*/
 
-.footer {
+.footer-center {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
     font-family: Ubuntu;
-    font-size: 0.8em;  
-    color: var(--grey-text-color);
-    justify-content: center;
-    height: 30px;
-    margin: 10px
+    font-size: 0.8em;
+    color: var(--darkgrey-text-color);
 }
 
 /*--- Media queries for responsiveness---*/
