@@ -72,10 +72,6 @@ a {
 button:focus {
     outline: none;
 }
-button:hover {
-    transform: scale(1.05);
-    transition: 0.4s ease-in-out; 
-}
 .banner-text {
     padding: 10px;
     position: absolute;
@@ -108,10 +104,6 @@ button:hover {
     padding: 5px;
     background: var(--main-background-color);
     margin: 10px;
-}
-.circle:hover {
-    transform: scale(1.1);
-    transition: 0.4s ease-in-out; 
 }
 a .fab {
     color: var(--orange-text-color);
