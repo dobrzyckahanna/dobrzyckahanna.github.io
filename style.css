@@ -57,24 +57,16 @@ a {
 }
 .navbar .navbar-nav .active {
     font-size: 1.2em;
+    color: var(--orange-text-color);
+    transition: 0.4s ease-in-out;
 }
 .navbar-brand, .navbar-nav li a {
     color: var(--darkgrey-text-color);
     margin: 0px 20px;
     outline: none;
 }
-.navbar-brand:hover, .navbar-nav li a:hover {
+#navbar-content .navbar-nav li a:hover {
     color: var(--orange-text-color);
-    transition: 0.4s ease-in-out;
-}
-.navbar-nav .nav-item .nav-link {
-    transition: 0.4s ease-in-out;
-}
-.navbar-nav .nav-item .nav-link:hover {
-    transition: 0.4s ease-in-out;
-    font-size: 1.3em;
-}
-.navbar .navbar-toggler:hover, .navbar .navbar-toggler:active {
     transition: 0.4s ease-in-out;
 }
 button:focus {
@@ -145,19 +137,16 @@ a .fab {
     margin: 30px;
     line-height: 1.2;
 }
-button {
+.my-button {
     margin: 30px;
     padding: 15px 30px;
     font-weight: bold;
     background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
     border: 1px solid var(--orange-background-color);
     border-radius: 15px;
-}
-button a {
     color: var(--white-text-color);
-    text-decoration: none;
 }
-button a:hover {
+a button {
     color: var(--white-text-color);
     text-decoration: none;
 }
@@ -207,7 +196,7 @@ h3 {
 /*--- portfolio ---*/
 
 .photo1 {
-    background: url('img/working.jpg') no-repeat;
+    background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%), url("img/monitors.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -219,19 +208,20 @@ h3 {
     height: 400px;
 }
 .photo3 {
-    background: url("img/workplace.jpg") no-repeat;
+    background: url("img/desk.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     height: 400px;
 }
 .photo4 {
-    background: url("img/monitors.jpg") no-repeat;
+    background: url("img/working.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     height: 400px;
 }
 .photo5 {
-    background: url("img/workingBW.jpg") no-repeat;
+    background:  linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%), url("img/workingBW.jpg") no-repeat;
+    background-blend-mode: lighten;
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -246,7 +236,8 @@ h2 {
     top: 10px;
     left: 10px;
     text-align: left;
-    color: var(--white-text-color)
+    color: var(--white-text-color);
+    font-weight: bold;
 }
 .top-left .button {
     margin: 0px;
@@ -254,9 +245,6 @@ h2 {
 h4 {
     font-weight: bold;
     font-size: 2em;
-}
-.top-left p {
-    font-size: 0.7em;
 }
 
 /*--- contact ---*/
@@ -319,8 +307,7 @@ h4 {
     top: 30px;
     right: -20px;
 }
-.button-text-white {
-    color: var(--white-text-color);
+.button-float-right {
     float: right;
 }
 
@@ -413,6 +400,7 @@ h4 {
     .row .col-sm-5 {
         padding: 15px;
         text-align: center;
+        font-size: 0.9em;
     }
     .top {
         line-height: 1.4;
