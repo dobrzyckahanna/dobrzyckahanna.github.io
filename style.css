@@ -28,9 +28,8 @@ a {
 /*--- navigation ---*/
 
 .bg-header {
-    background: url("img/computer.jpg") no-repeat fixed;
-    background-size: cover;
-    background-position: center;
+    background-image: url("img/computer.jpg");
+    background-attachment: fixed;
     min-height: 600px;
     max-width: 1600px;
 }
@@ -68,7 +67,6 @@ button:focus {
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold; 
-    justify-content: center; 
 }
 .banner-text h2 {
     color:  #FFC53D;
@@ -89,7 +87,6 @@ button:focus {
     height: 30px;
     border-radius: 50%;
     font-size: 0.8em;
-    text-align: center;
     padding: 5px;
     background: #FFFFFF;
     margin: 10px;
@@ -116,7 +113,6 @@ a .fab {
 .help {
     font-size: 2em;
     margin: 30px;
-    line-height: 1.2;
 }
 .my-button {
     margin: 30px;
@@ -137,10 +133,8 @@ a button {
 .section-padding {
     padding: 0px;
 }
-.profile {
-    background: url("img/foto.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
+.photo.profile {
+    background-image: url("img/foto.jpg");
     height: 120px;  
     width: 120px; 
     border-radius: 50%;
@@ -176,36 +170,28 @@ h3 {
 
 /*--- portfolio ---*/
 
-.photo1 {
-    background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%), url("img/monitors.jpg") no-repeat;
+.photo {
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     height: 400px;
+}
+.photo1 {
+    background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%), url("img/monitors.jpg"); 
+    background-blend-mode: lighten;
 }
 .photo2 {
-    background: url("img/programming-girl.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 400px;
+    background-image: url("img/programming-girl.jpg");
 }
 .photo3 {
-    background: url("img/desk.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 400px;
+    background-image: url("img/desk.jpg");
 }
 .photo4 {
-    background: url("img/working.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 400px;
+    background-image: url("img/working.jpg");
 }
 .photo5 {
-    background:  linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%), url("img/workingBW.jpg") no-repeat;
+    background-image:  linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%), url("img/workingBW.jpg");
     background-blend-mode: lighten;
-    background-size: cover;
-    background-position: center;
-    height: 400px;
 }
 h2 {
     font-size: 1.7em;
